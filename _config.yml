@@ -1,55 +1,120 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+---
+#-------------------------------
+# General Site Settings
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
-title: Atom Technologies
-email: adam.developer0@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://atomtechnologiesweb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  atomtechnologiesweb
+title: Parsa | Portfolio Jekyll Template
+logo: /assets/images/logo.png # You can add own logo
+description: # Add your awesome description
+copyright: Copyright 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)
+# Preloader
+preloader: true # To disable preloader change value to false
 
+menu:
+  - name: Home
+    url: /
+  - name: About
+    url: /about/
+  - name: Contact
+    url: /contact/
+
+# *** NOTE ***
+# You can add submenus. For example:
+
+#  menu:
+#  - name: Home
+#    url: /
+#    submenu:
+#     - name: Peru
+#       url: /peru/
+# ----------------------------------
+
+layout_home_page: true # Homepage layout ( two layout is available, you can set the another layout by change the value of layout_home_page "true" to "false")
+
+featured-post-slider: true # You can enable or disable the featured-post-slider using true or false values.
+
+#-------------------------------
+# Hero Section
+hero:
+  hero-subtitle: I’m a Freelance Interactive Art Director based in France. Focusing across branding and identity, digital and print.
+  hero-banner: /assets/images/banner-img.png # Add your banner image '/assets/images/'
+
+#-------------------------------
+# Author Settings
+author:
+  name: Jhon Abraham
+
+#-------------------------------
+# Contact Info
+contact:
+  email: example@ymail.com
+  phone: +90 000 333 22
+  address:
+    city: Sydney
+    street: 6 rip carl Avenue CA 90733
+
+# Contact Form
+contact-form: example@email.com
+
+# Social links
+social:
+  - { icon: "ti-facebook", link: "#" }
+  - { icon: "ti-twitter-alt", link: "#" }
+  - { icon: "ti-linkedin", link: "#" }
+  - { icon: "ti-github", link: "#" }
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
+
+#-------------------------------
+# Instagram Feed
+instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+userID: 4044026246
+accessToken: 4044026246.1677ed0.8896752506ed4402a0519d23b8f50a17
+
+#-------------------------------
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+#-------------------------------
 # Build settings
-theme: minima
+markdown: kramdown
+permalink: pretty
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-archives
+
+paginate: 10
+paginate_path: "/page/:num"
+
+# Pages Path
+defaults:
+  - scope:
+      path: "_pages"
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir: tag
+tag_page_layout: tag_page
+tag_permalink_style: pretty
+
+# categories
+jekyll-archives:
+  enabled: all
+  layout: category
+  permalinks:
+    category: "/category/:name/"
 
 # Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
