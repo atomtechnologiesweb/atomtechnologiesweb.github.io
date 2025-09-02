@@ -4,8 +4,8 @@
 baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
-title: Parsa | Portfolio Jekyll Template
-logo: /assets/images/logo.png # You can add own logo
+title: Atom Technologies
+logo: /assets/images/NameLogo.png # You can add own logo
 description: # Add your awesome description
 copyright: Copyright 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)
 # Preloader
@@ -59,9 +59,9 @@ contact-form: example@email.com
 
 # Social links
 social:
-  - { icon: "ti-facebook", link: "#" }
+  - { icon: "ti-instagram", link: "#" }
   - { icon: "ti-twitter-alt", link: "#" }
-  - { icon: "ti-linkedin", link: "#" }
+  - { icon: "ti-youtube", link: "#" }
   - { icon: "ti-github", link: "#" }
 
 #-------------------------------
