@@ -5,9 +5,9 @@ baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # The base hostname & protocol for your site, e.g. http://example.com
 
 title: Atom Technologies
-logo: /assets/images/NameLogo.png # You can add own logo
-description: # Add your awesome description
-copyright: Copyright 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Gethugothemes](https://gethugothemes.com)
+logo: /assets/images/Logo60x60.png # You can add own logo
+description: Atom Technologies is the publishing name for a small game creator who codes and designs fun games for Windows and Xbox devices.
+copyright: 
 # Preloader
 preloader: true # To disable preloader change value to false
 
@@ -37,32 +37,34 @@ featured-post-slider: true # You can enable or disable the featured-post-slider 
 #-------------------------------
 # Hero Section
 hero:
-  hero-subtitle: I’m a Freelance Interactive Art Director based in France. Focusing across branding and identity, digital and print.
-  hero-banner: /assets/images/banner-img.png # Add your banner image '/assets/images/'
+  hero-subtitle: Atom Technologies is the publishing name for a small game creator who codes and designs fun games for Windows and Xbox devices.
+  hero-banner: /assets/images/Logo.png # Add your banner image '/assets/images/'
 
 #-------------------------------
 # Author Settings
 author:
-  name: Jhon Abraham
+  name: Atom Technologies
+  bio: Atom Technologies is the publishing name for a small game creator who codes and designs fun games for Windows and Xbox devices.
+  avatar: /assets/images/Logo60x60.png # Add your avatar 
 
 #-------------------------------
 # Contact Info
-contact:
-  email: example@ymail.com
-  phone: +90 000 333 22
-  address:
-    city: Sydney
-    street: 6 rip carl Avenue CA 90733
+#contact:
+#  email: atomtechnologies00@gmail.com
+#  phone: +90 000 333 22
+#  address:
+#    city: Sydney
+#    street: 6 rip carl Avenue CA 90733
 
 # Contact Form
-contact-form: example@email.com
+#contact-form: example@email.com
 
 # Social links
 social:
-  - { icon: "ti-instagram", link: "#" }
-  - { icon: "ti-twitter-alt", link: "#" }
-  - { icon: "ti-youtube", link: "#" }
-  - { icon: "ti-github", link: "#" }
+  - { icon: "ti-instagram", link: "https:/instagram.com/atom.technologies_"}
+  - { icon: "ti-twitter-alt", link: "https://x.com/atomtechnologie" }
+  - { icon: "ti-youtube", link: "https://youtube.com/@atom.technologies" }
+  - { icon: "ti-pinterest-alt", link: "https://pin.it/1XUbAPDII" }
 
 #-------------------------------
 # Comment Section (Disqus)
@@ -70,7 +72,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 
 #-------------------------------
 # Instagram Feed
-instafeed: true # To enable the instafeed, use the value true. To turn off use the value false.
+instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
 userID: 4044026246
 accessToken: 4044026246.1677ed0.8896752506ed4402a0519d23b8f50a17
 
