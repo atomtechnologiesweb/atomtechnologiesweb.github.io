@@ -1,143 +1,128 @@
----
-layout: default
----
-
-{% if site.layout_home_page == true %}
-{% if site.featured-post-slider == true %}
-<!-- featured post -->
-<section>
-  <div class="container-fluid p-sm-0">
-    <div class="row featured-post-slider">
-      {% for post in site.posts %}
-      {% if post.featured == true %}
-      <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-        <article class="card bg-dark text-center text-white border-0 rounded-0">
-          <img class="card-img rounded-0 img-fluid w-100" src="{{post.image | relative_url}}" alt="{{post.title}}">
-          <div class="card-img-overlay">
-            <div class="card-content">
-              {% if post %}
-                {% assign categories = post.categories %}
-              {% else %}
-              {% assign categories = page.categories %}
-              {% endif %}
-              {% for category in post.categories %}
-              <a class="d-block mb-3 text-white text-uppercase" href="{{ 'category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
-              {% endfor %}
-              <h4 class="card-title mb-4"><a class="text-white" href="{{ post.url | relative_url }}">{{post.title}}</a></h4>
-              <a class="btn btn-outline-light" href="{{ post.url | relative_url }}">read more</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atom Technologies</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/scroll.css">
+</head>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+    <a class="navbar-brand text-primary" href="index.html"><img src="/assets/img/MainLogo.png" alt="Atom Technologies" width="30" height="30" class="d-inline-block align-text-top">Atom Technologies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="#about">About</a>
+        <a class="nav-item nav-link" href="#games">Games</a>
+        <span class="nav-item nav-link"></span>
+        </div>
+        <div class="navbar-nav ms-auto">
+            <div class="d-flex d-flex-padding">
+                <a class="nav-item nav-link p-2" href="https://instagram.com/atom.technologies_"><img src="/bootstrap/icons/instagram.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://youtube.com/@atom.technologies"><img src="/bootstrap/icons/youtube.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://x.com/atom.technologie"><img src="/bootstrap/icons/twitter.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://pinterest.com/atomtechnologies_"><img src="/bootstrap/icons/pinterest.svg" alt="" class="svg-grey"></a>
             </div>
-          </div>
-        </article>
+        </div>  
+    </div>
+    </nav>
+    <hr class="bg-light">
+    <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6 mx-auto rounded" style="background-image: url('/assets/img/hero-shot.jpg'); background-size: cover; background-position: center;">
+        <img src="/assets/img/ColoredLogoNoCircle.png" class="d-block mx-lg-auto img-fluid" alt="Atom Technologies Games" height="auto" loading="lazy">
       </div>
-      {% endif %}
-      {% endfor %}
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3"><span class="text-primary">Atom Technologies</span> Games</h1>
+        <p class="lead">One programmer, with a passion for creating artistic games that challenge the conventions. With complex logic behind each creation, Atom Technologies strives to deliver unique and engaging experiences.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a type="button" class="btn btn-primary btn-lg px-4" href="#about">Find Out More</a>
+          <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="#games">Games</a>
+        </div>
+      </div>
     </div>
   </div>
-</section>
-<!-- /featured post -->
-{% endif %}
-
-<!-- blog post -->
-<section class="section">
+  <!-- About 1 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5">
   <div class="container">
-    <div class="row masonry-container">
-			{% if site.posts.size > 0 %}
-			{% for post in paginator.posts %}
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <article class="text-center">
-					<img class="img-fluid mb-4" src="{{post.image | relative_url}}" alt="{{post.title}}">
-					{% if post %}
-						{% assign categories = post.categories %}
-					{% else %}
-					{% assign categories = page.categories %}
-					{% endif %}
-					{% for category in post.categories %}
-          <a class="d-block mb-3 text-dark text-uppercase" href="{{ 'category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
-          {% endfor %}
-          <h4 class="title-border"><a class="text-dark" href="{{ post.url | prepend: site.baseurl }}">{{post.title}}</a></h4>
-          <p>{{ post.content | strip_html | truncatewords: 35 }}</p>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="btn btn-transparent">read more</a>
-        </article>
+    <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+      <div class="col-12 col-lg-6 col-xl-5">
+        <img class="img-fluid rounded" loading="lazy" src="/assets/img/about-atom.jpg" alt="About 1">
       </div>
-			{% endfor %}
-			{% endif %}
+      <div class="col-12 col-lg-6 col-xl-7">
+        <div class="row justify-content-xl-center">
+          <div class="col-12 col-xl-11">
+            <h2 class="mb-3" id="about">About Atom</h2>
+            <p class="lead fs-4 text-secondary mb-3">Atom Technologies started as a passion project to create unique and engaging games.</p>
+            <div class="row gy-4 gy-md-0 gx-xxl-5X">
+              <div class="col-12 col-md-6">
+                <div class="d-flex">
+                  <div class="me-4 text-primary">
+                    <img src="/bootstrap/icons/person-gear.svg" alt="Code Icon" width="32" height="32" class="svg-primary"> 
+                  </div>
+                  <div>
+                    <h2 class="h4 mb-3">Solo Developer</h2>
+                    <p class="text-secondary mb-0">I develop all games published under Atom Technologies. Piecing together code, models, art, and music with a blend of personal touch to create interesting experiences.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="d-flex">
+                  <div class="me-4 text-primary">
+                    <img src="/bootstrap/icons/file-earmark-code-fill.svg" alt="Code Icon" width="32" height="32" class="svg-primary">
+                  </div>
+                  <div>
+                    <h2 class="h4 mb-3">Experienced Programmer</h2>
+                    <p class="text-secondary mb-0">I have extensive experience in game development and all-around programming, Atom Technologies exists solely on my passion for creating playable art through code.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <p class="mb-5">Atom Technologies started with a single game, Reverse Snake, the idea being simple: flip the script on the classic google snake and control the food to try and avoid the snake.
+                The only problem was that it only existed on my computer. I wanted to share it with others<span id="about-dots">...</span><span id="about-more" class="about-disabled">, so I chose the name Atom Technologies and published it on the Microsoft Store.
+                 When I released it, I was excited when it reached 100 downloads, eventually a new idea came to me, and I wanted to make it into a game. That game was Wild Eclipse, a completely different 
+                 experience from Reverse Snake, but it was still a game I wanted to share with others. I published it on the Microsoft Store as well, and it eventually reached 1000 downloads.
+                I started branching out, designing short commercials on social media, and creating more games, each with its own unique style and gameplay. I also started sharing my games on other platforms like itch.io, 
+                and I even started a YouTube channel to share development updates and behind-the-scenes looks at my games.
+                 Now, Atom Technologies is a small indie game studio with a growing library of games, and I'm excited to see where it goes in the future.</span><br><br>
+                <button onclick="about_readMore()" id="about-myBtn" class="btn btn-primary">Read more</button></p>
+                
+          </div>
+        </div>
+      </div>
     </div>
-    {% include pagination.html %}
   </div>
 </section>
-<!-- /blog post -->
-
-{% include instagram.html %}
-
-{% else %}
-
-<!-- dividers -->
-<div class="dividers">
-  <div class="divider"></div>
-  <div class="divider"></div>
-  <div class="divider"></div>
-  <div class="divider"></div>
+<br>
+<div class="container py-5">
+    <h2 class="mb-4" id="games">Games</h2>
+     <p class="lead fs-4 text-secondary mb-3">All games available on the Microsoft and Xbox Stores</p>
+    <div class="d-flex flex-row flex-nowrap overflow-auto p-3" id="games-display"></div>
 </div>
 
-<!-- hero area -->
-<section class="hero-section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 align-self-end">
-        <h1 class="mb-0">Welcome</h1>
-        <h2 class="mb-100 title-border-lg">to <i>{{site.author.name}} Blog</i></h2>
-        <p class="mb-80 mr-5">{{site.hero.hero-subtitle}}</p>
-        <span class="font-secondary text-dark mr-3 mr-sm-5">Follow</span>
-        <ul class="list-inline d-inline-block mb-5">
-          {% for social in site.social %}
-          <li class="list-inline-item mx-3"><a href="{{ social.link }}" class="text-dark"><i class="{{ social.icon }}"></i></a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="col-lg-6 text-right">
-        <img class="img-fluid" src="{{site.hero.hero-banner | relative_url }}" alt="banner-image">
-      </div>
+  <footer class="bg-body-tertiary text-center text-lg-start">
+    <div class="p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="d-flex d-flex-padding justify-content-center">
+            <a href="index.html"><img src="/assets/img/MainLogo.png" alt="" width="30" height="30" class="mx-5 mt-2"></a>
+            <div class="justify-self-end d-flex d-flex-padding sm-3">
+                <a class="nav-item nav-link p-2" href="https://instagram.com/atom.technologies_"><img src="/bootstrap/icons/instagram.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://youtube.com/@atom.technologies"><img src="/bootstrap/icons/youtube.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://x.com/atom.technologie"><img src="/bootstrap/icons/twitter.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://pinterest.com/atomtechnologies_"><img src="/bootstrap/icons/pinterest.svg" alt="" class="svg-grey"></a>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-<!-- /hero area -->
+    </footer>
 
-<!-- blog post -->
-<section class="section">
-  <div class="container">
-    <div class="row">
-      {% if site.posts.size > 0 %}
-      {% for post in paginator.posts %}
-      {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-      {% if thecycle == 'odd' %}
-        {% assign class = '' %}
-      {% else %}
-        {% assign class = 'article-right' %}
-      {% endif %}
-      <div class="col-12 mb-100">
-        <article data-file="{{ post.url | prepend: site.baseurl }}" data-target="article" class="article-full-width {{class}}">
-          <div class="post-image">
-            <img class="img-fluid" src="{{post.image | relative_url}}" alt="{{post.title}}">
-          </div>
-          <div class="post-content">
-            <ul class="list-inline d-flex justify-content-between border-bottom post-meta pb-2 mb-4">
-              <li class="list-inline-item"><i class="ti-calendar mr-2"></i>{{post.date | date: '%b %d, %Y'}}</li>
-              <li class="list-inline-item"><i class="ti-alarm-clock mr-2"></i><span class="eta"></span> read</li>
-            </ul>
-            <h4 class="mb-4"><a href="{{ post.url | prepend: site.baseurl }}" class="text-dark">{{post.title}}</a></h4>
-            <p class="mb-0 post-summary">{{ post.content | strip_html | truncatewords: 35 }}</p>
-            <a class="btn btn-transparent mb-4" href="{{ post.url | prepend: site.baseurl }}">Continue...</a>
-          </div>
-        </article>
-      </div>
-      {% endfor %}
-			{% endif %}
-    </div>
-    {% include pagination.html %}
-  </div>
-</section>
-<!-- /blog post -->
-
-{% include instagram.html %}
-
-{% endif %}
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/about-read-more.js"></script>
+    <script src="/js/games-display-load.js"></script>
+</body>
+</html>

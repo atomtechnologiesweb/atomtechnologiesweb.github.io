@@ -1,18 +1,53 @@
----
-layout: default
-title: 404
-image:
-permalink: /404.html
----
-<div class="container">
-  <div class="row">
-    <div class="col col-12" style="text-align: center; padding-bottom: 50px">
-      <h1>{{page.title}}</h1>
-      <h2>Page not found</h2>
-      <p>The requested page could not be found.</p>
-      <p><a href="{{site.baseurl}}/">Back to the Blog</a></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atom Technologies</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/scroll.css">
+</head>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+    <a class="navbar-brand text-primary" href="index.html"><img src="/assets/img/MainLogo.png" alt="Atom Technologies" width="30" height="30" class="d-inline-block align-text-top">Atom Technologies</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="index.html#about">About</a>
+        <a class="nav-item nav-link" href="index.html#games">Games</a>
+        <span class="nav-item nav-link"></span>
+        </div>
+        <div class="navbar-nav ms-auto">
+            <div class="d-flex d-flex-padding">
+                <a class="nav-item nav-link p-2" href="https://instagram.com/atom.technologies_"><img src="/bootstrap/icons/instagram.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://youtube.com/@atom.technologies"><img src="/bootstrap/icons/youtube.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://x.com/atom.technologie"><img src="/bootstrap/icons/twitter.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://pinterest.com/atomtechnologies_"><img src="/bootstrap/icons/pinterest.svg" alt="" class="svg-grey"></a>
+            </div>
+        </div>  
+    </div>
+    </nav>
+    <hr class="bg-light">
+    <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6 mx-auto rounded" style="background-image: url('/assets/img/404.jpg'); background-size: cover; background-position: center;">
+        <img src="/assets/img/ColoredLogoNoCircle.png" class="d-block mx-lg-auto img-fluid" alt="Atom Technologies Games" height="auto" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3"><span class="text-primary">404</span> Page Not Found</h1>
+        <p class="lead">The page you are looking for does not exist or has been moved.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a type="button" class="btn btn-primary btn-lg px-4" href="index.html">Go Home</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
-{% include instagram.html %}
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

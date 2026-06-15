@@ -1,0 +1,72 @@
+[
+    {
+        "image": "/assets/img/gamedisplay/reversesnake.png",
+        "title": "Reverse Snake",
+        "releaseDate": "07-11-2022",
+        "description": "simple classic game of snake, but with a twist. you control the food and try not to get eaten or touch the red hot lava walls. survive for 4 minutes and win or die trying",
+        "trailerLink": "https://www.youtube.com/watch?v=gZXjtjYz4aU"
+    },
+    {
+        "image": "/assets/img/gamedisplay/wildeclipse.png",
+        "title": "Wild Eclipse",
+        "releaseDate": "09-08-2023",
+        "description": "Pieto the fox dreams about seeing an eclipse, and today he has the opportunity. Help Pieto travers dangerous terrain and avoid the natural disasters thrown at him.",
+        "trailerLink": "https://www.youtube.com/watch?v=JkhpVte51PI"
+    },
+    {
+        "image": "/assets/img/gamedisplay/lostchakras.png",
+        "title": "Lost Chackras",
+        "releaseDate": "15-01-2023",
+        "description": "Lost chakras is a physics based puzzle game made for all ages. The relaxing and interesting game play accompanied by calming music is excellent after a hard days work.",
+        "trailerLink": "https://www.youtube.com/watch?v=Ex13Jg0OqzY"
+    },
+    {
+        "image": "/assets/img/gamedisplay/asphaltdrifting.png",
+        "title": "Asphalt Drifting",
+        "releaseDate": "23-10-2024",
+        "description": "Drift on infinite roads with any car in any color you can imagine. Do tricks to score extra points and get a high score! Complete time trials to prove your worth, unlock the elite race car, have infinite fun on the roads ahead",
+        "trailerLink": "https://www.youtube.com/watch?v=34V9xGtFBZY"
+    },
+    {
+        "image": "/assets/img/gamedisplay/10secondescape.png",
+        "title": "10 Second Escape",
+        "releaseDate": "23-04-2024",
+        "description": "10 Second Escape is a cyber styled skill based platformer with wall jumping, moving platforms, rope swining and more. Beat the clock to progress, because you only have 10 seconds to get to a checkpoint. Earn daily rewards and unlock exclusive items to help your journey.",
+        "trailerLink": "https://www.youtube.com/watch?v=f38x0_mFzWQ"
+    },
+    {
+        "image": "/assets/img/gamedisplay/secretsinthedark.png",
+        "title": "Secrets In The Dark",
+        "releaseDate": "23-06-2024",
+        "description": "Train to become the Dungeon Master, travel through the vast terrain, fight the monsters that lurk inside, complete quests to prove yourself. Explore a diffrent world every playthrough with diffrent quests and monsters. Become the powerful Master you are destined to be.",
+        "trailerLink": "https://www.youtube.com/watch?v=L6zdeygJILA"
+    },
+    {
+        "image": "/assets/img/gamedisplay/intheabyss.png",
+        "title": "In The Abyss",
+        "releaseDate": "30-01-2023",
+        "description": "Escape the prison of the light creatures, but don't get caught. Use gravity changing portals to maneuver trough the labyrinth of a prison. In The Abyss is an intense platformer with gravity changing portals sutable for all ages",
+        "trailerLink": "https://www.youtube.com/watch?v=2LtIJA_PcVY"
+    },
+    {
+        "image": "/assets/img/gamedisplay/projectwalker.png",
+        "title": "Project Walker",
+        "releaseDate": "22-1-2024",
+        "description": "in this Cyber Punk style maze runner you have been captured by Dr. Nightshade who is conducting essential tests for his new project Attempt to escape the maze while being hunted by the Walkers Acquire powerful items to help you through your journey",
+        "trailerLink": "https://www.youtube.com/watch?v=IX8Zb4sjtw0"
+    },
+    {
+        "image": "/assets/img/gamedisplay/voidofcrosshair.png",
+        "title": "Void Of Crosshair",
+        "releaseDate": "04-02-2026",
+        "description": "In Void of Crosshair, players immerse themselves in a minimalist universe where the objective is simple yet exhilarating: control a sleek spaceship as it navigates an ever-encroaching swarm of enemy ships",
+        "trailerLink": "https://www.youtube.com/watch?v=XCiLFEfR7Lc"
+    },
+    {
+        "image": "/assets/img/gamedisplay/starjumping.png",
+        "title": "Star Jumping",
+        "releaseDate": "24-11-2025",
+        "description": "Star Jumping is a fast-paced, neon-styled arcade runner where you control a glowing blue cube racing through a cosmic track filled with bright, holographic obstacles. Your goal is simple: react quickly, and weave through shifting gates as the speed steadily increases",
+        "trailerLink": "https://www.youtube.com/watch?v=H0XScE08hy8"
+    }
+]

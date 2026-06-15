@@ -1,0 +1,44 @@
+img.svg-grey{
+  filter: invert(100%) brightness(70%);
+}
+
+img.svg-light{
+  filter: invert(100%);
+}
+
+img.svg-primary{
+filter: brightness(0) saturate(100%) invert(54%) sepia(64%) saturate(908%) hue-rotate(0deg) brightness(109%) contrast(105%);
+}
+
+img.svg-secondary{
+  filter: invert(100%) sepia(100%) hue-rotate(200deg) brightness(50%);
+}
+
+.d-flex-padding a{
+  margin-right: 0.6em;
+}
+
+.darken-50{
+  filter: brightness(50%);
+}
+
+.darken-75{
+  filter: brightness(75%);
+}
+
+.darken-25{
+  filter: brightness(25%);
+}
+
+
+
+.about-disabled{
+  display: none !important;
+  color: var(--bs-dark) !important;
+  transition: color 3s ease;
+}
+.about-enabled{
+  display: inline !important;
+  color: var(--bs-white) !important;
+  transition: color 3s ease;
+}
