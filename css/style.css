@@ -42,3 +42,7 @@ img.svg-secondary{
   color: var(--bs-white) !important;
   transition: color 3s ease;
 }
+
+.font-roboto{
+  font-family: 'Roboto', monospace !important;
+}
