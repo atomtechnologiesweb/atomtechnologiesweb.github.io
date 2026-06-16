@@ -5,7 +5,8 @@
         "releaseDate": "07-11-2022",
         "description": "Simple classic game of snake, but with a twist. You control the food and try not to get eaten. Survive for 4 minutes and win or be eaten by the snake. Reverse Snake is a fun and simple game for all ages.",
         "trailerLink": "https://www.youtube.com/watch?v=gZXjtjYz4aU",
-        "platforms": ["Windows", "Xbox"]
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 2018"
     },
     {
         "image": "/assets/img/gamedisplay/wildeclipse.png",
@@ -13,7 +14,8 @@
         "releaseDate": "09-08-2023",
         "description": "Pieto the fox dreams about seeing an eclipse, and today he has the opportunity. Help Pieto travers dangerous terrain and avoid the natural disasters thrown at him.",
         "trailerLink": "https://www.youtube.com/watch?v=JkhpVte51PI",
-        "platforms": ["Windows", "Xbox"]
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 2021"
     },
     {
         "image": "/assets/img/gamedisplay/lostchakras.png",
@@ -21,7 +23,8 @@
         "releaseDate": "15-01-2023",
         "description": "Lost chakras is a physics based puzzle game made for all ages. The relaxing and interesting game play accompanied by calming music is excellent after a hard days work.",
         "trailerLink": "https://www.youtube.com/watch?v=Ex13Jg0OqzY",
-        "platforms": ["Windows", "Xbox"]
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 2018"
     },
     {
         "image": "/assets/img/gamedisplay/asphaltdrifting.png",
@@ -30,7 +33,8 @@
         "description": "Drift on infinite roads with any car in any color you can imagine. Do tricks to score extra points and get a high score! Complete time trials to prove your worth, unlock the elite race car, have infinite fun on the roads ahead",
         "trailerLink": "https://www.youtube.com/watch?v=34V9xGtFBZY",
         "creatorFavorite": true,
-        "platforms": ["Windows"]
+        "platforms": ["Windows"],
+        "developmentEngine": "Unreal Engine 5.4"
     },
     {
         "image": "/assets/img/gamedisplay/10secondescape.png",
@@ -39,7 +43,8 @@
         "description": "10 Second Escape is a cyber styled skill based platformer with wall jumping, moving platforms, rope swining and more. Beat the clock to progress, because you only have 10 seconds to get to a checkpoint. Earn daily rewards and unlock exclusive items to help your journey.",
         "trailerLink": "https://www.youtube.com/watch?v=f38x0_mFzWQ",
         "creatorFavorite": true,
-        "platforms": ["Windows", "Xbox"]
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 2021"
     },
     {
         "image": "/assets/img/gamedisplay/secretsinthedark.png",
@@ -47,7 +52,8 @@
         "releaseDate": "23-06-2024",
         "description": "Train to become the Dungeon Master, travel through the vast terrain, fight the monsters that lurk inside, complete quests to prove yourself. Explore a diffrent world every playthrough with diffrent quests and monsters. Become the powerful Master you are destined to be.",
         "trailerLink": "https://www.youtube.com/watch?v=L6zdeygJILA",
-        "platforms": ["Windows", "Xbox"]
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 2021"
     },
     {
         "image": "/assets/img/gamedisplay/intheabyss.png",
@@ -55,7 +61,8 @@
         "releaseDate": "30-01-2023",
         "description": "Escape the prison of the light creatures, but don't get caught. Use gravity changing portals to maneuver trough the labyrinth of a prison. In The Abyss is an intense platformer with gravity changing portals sutable for all ages",
         "trailerLink": "https://www.youtube.com/watch?v=2LtIJA_PcVY",
-        "platforms": ["Windows", "Xbox"]
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 2020"
     },
     {
         "image": "/assets/img/gamedisplay/projectwalker.png",
@@ -64,7 +71,8 @@
         "description": "In this Cyber Punk style maze runner you have been captured by Dr. Nightshade who is conducting essential tests for his new project. Attempt to escape the maze while being hunted by the Walkers Acquire powerful items to help you through your journey.",
         "trailerLink": "https://www.youtube.com/watch?v=IX8Zb4sjtw0",
         "creatorFavorite": true,
-        "platforms": ["Windows", "Xbox"]
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 2022"
     },
     {
         "image": "/assets/img/gamedisplay/voidofcrosshair.png",
@@ -72,14 +80,16 @@
         "releaseDate": "04-02-2026",
         "description": "In Void of Crosshair, players immerse themselves in a minimalist universe where the objective is simple yet exhilarating: control a sleek spaceship as it navigates an ever-encroaching swarm of enemy ships",
         "trailerLink": "https://www.youtube.com/watch?v=XCiLFEfR7Lc",
-        "platforms": ["Windows", "Xbox"]
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 6.3"
     },
     {
         "image": "/assets/img/gamedisplay/starjumping.png",
         "title": "Star Jumping",
         "releaseDate": "24-11-2025",
         "description": "Star Jumping is a fast-paced, neon-styled arcade runner where you control a glowing blue cube racing through a cosmic track filled with bright, holographic obstacles. Your goal is simple: react quickly, and weave through shifting gates as the speed steadily increases",
-        "trailerLink": "https://www.youtube.com/watch?v=H0XScE08hy8",
-        "platforms": ["Windows", "Xbox"]
+        "trailerLink": "https://www.youtube.com/watch?v=iofYNkh_uEI",
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 6.0"
     }
 ]
