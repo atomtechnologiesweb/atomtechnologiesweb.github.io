@@ -80,5 +80,10 @@ body{
 }
 
 .contents{
-  min-height:calc(100vh - 4.5em);
+  min-height:calc(100vh - 3em);
+  overflow-x: hidden;
+}
+
+.text-right{
+  text-align: right;
 }
