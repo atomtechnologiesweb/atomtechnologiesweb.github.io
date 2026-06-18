@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atom Technologies</title>
+    <title>About</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/scroll.css">
 </head>
 <body class="bg-dark text-light">
+    <div class="contents">
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
     <a class="navbar-brand text-primary font-roboto" href="/"><img src="/assets/img/MainLogo.png" alt="Atom Technologies" width="30" height="30" class="d-inline-block align-text-top">Atom Technologies</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,7 +20,7 @@
         <div class="navbar-nav">
         <a class="nav-item nav-link active p-3" href="/">Home</a>
         <a class="nav-item nav-link p-3" href="/pages/about.html">About</a>
-        <a class="nav-item nav-link p-3" href="#games">Games</a>
+        <a class="nav-item nav-link p-3" href="/#games">Games</a>
         <span class="nav-item nav-link"></span>
         </div>
         <div class="navbar-nav ms-auto">
@@ -33,59 +34,37 @@
     </div>
     </nav>
     <hr class="bg-light">
-    <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6 mx-auto rounded" style="background-image: url('/assets/img/hero-shot.jpg'); background-size: cover; background-position: center;">
-        <img src="/assets/img/ColoredLogoNoCircle.png" class="d-block mx-lg-auto img-fluid" alt="Atom Technologies Games" height="auto" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3 font-roboto hidden hidden-left"><span class="text-primary">Atom Technologies</span> Games</h1>
-        <p class="lead hidden hidden-left">One programmer, with a passion for creating artistic games that challenge the conventions. With complex logic behind each creation, Atom Technologies strives to deliver unique and engaging experiences.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a type="button" class="btn btn-primary btn-lg px-4 hidden-left hidden" href="#about">Find Out More</a>
-          <a type="button" class="btn btn-outline-secondary btn-lg px-4 hidden-left hidden" href="#games">Games</a>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- About 1 - Bootstrap Brain Component -->
 <section class="py-3 py-md-5">
   <div class="container">
     <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-      <div class="col-12 col-lg-6 col-xl-5">
+      <div class="col-12 col-lg-6 col-xl-5 mx-top">
         <img class="img-fluid rounded" loading="lazy" src="/assets/img/about-atom.jpg" alt="About 1">
       </div>
       <div class="col-12 col-lg-6 col-xl-7">
         <div class="row justify-content-xl-center">
           <div class="col-12 col-xl-11">
-            <h2 class="mb-3 font-roboto fw-bold hidden hidden-right" id="about">About Atom</h2>
+            <h2 class="mb-3 font-roboto fw-bold hidden hidden-right text-primary" id="about">About Atom</h2>
             <p class="lead fs-4 text-secondary mb-3 hidden hidden-right">Atom Technologies started as a passion project to create unique and engaging games.</p>
-            <div class="row gy-4 gy-md-0 gx-xxl-5X">
-              <div class="col-12 col-md-6">
-                <div class="d-flex">
-                  <div class="me-4 text-primary">
-                    <img src="/bootstrap/icons/person-gear.svg" alt="Code Icon" width="32" height="32" class="svg-primary hidden hidden-right"> 
-                  </div>
-                  <div>
-                    <h2 class="h4 mb-3 font-roboto hidden hidden-right">Solo Developer</h2>
-                    <p class="text-secondary mb-0 hidden hidden-right">I develop all games published under Atom Technologies. I piece together code, models, art, and music with a blend of personal touch to create interesting experiences.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="d-flex">
-                  <div class="me-4 text-primary">
-                    <img src="/bootstrap/icons/file-earmark-code-fill.svg" alt="Code Icon" width="32" height="32" class="svg-primary hidden hidden-right">
-                  </div>
-                  <div>
-                    <h2 class="h4 mb-3 font-roboto hidden hidden-right">Experienced Programmer</h2>
-                    <p class="text-secondary mb-0 hidden hidden-right">I have extensive experience in game development and all-around programming, Atom Technologies exists solely on my passion for creating playable art through code.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
             <br>
-                <a href="/pages/about.html" class="btn btn-primary">Read More</a>
+            <h3 class="h3 hidden hidden-right font-roboto fw-bold">Who Is Atom?</h3><p class="mb-5 hidden hidden-right">
+            I, Atom, am an inspired programmer who likes working with computers and challenging the limits of software capabilities.
+            I started my game development journey with Python3 and Pygame, creating space invaders clones or other simple projects. I then extended
+            my skills to web development and tried using HTML to make games. Later I decided to tackle the beast, Unity game engine. I had to learn C# and the Unity interface
+            through youtube and browsing Unity blogs, but eventually I did get a hang of Unity. And that's where Atom Technologies really started becoming something.</p>
+            <h3 class="h3 hidden hidden-right font-roboto fw-bold">The Beginning</h3>
+            <p class="mb-5 hidden hidden-right">Atom Technologies started with a single game, Reverse Snake, the idea being simple: flip the script on the classic google snake and control the food to try and avoid the snake. I did this with the Unity game engine.
+                The only problem was that it only existed on my computer. I wanted to share it with others, so I chose the name Atom Technologies and published it on the Microsoft Store.
+                 When I released it, I was excited when it reached 100 downloads, eventually a new idea came to me, and I wanted to make it into a game. That game was Lost Chakras, a completely different 
+                 experience from Reverse Snake, but it was still a game I wanted to share with others. I published it on the Microsoft Store as well, and it eventually reached 1000 downloads.</p>
+                <h3 class="h3 hidden hidden-right font-roboto fw-bold">Atom Grows</h3>
+                 <p class="mb-5 hidden hidden-right">I started branching out, designing short commercials on social media with CapCut and then DavinciResolve, I had to learn editing, design, and advertisement layout in order to accomplish this. I also created more games, each with its own unique style and gameplay, with more daring designs and sophisticated code. I also started sharing my games on other platforms like itch.io, 
+                and I even started a YouTube channel to share development updates and behind-the-scenes looks at my games.
+                 Now, Atom Technologies is a small indie game studio with a growing library of games, release trailers, and behind the scenes dev logs.</p>
+            <h3 class="h3 hidden hidden-right font-roboto fw-bold">What Might Come...</h3>
+                 <p class="mb-5 hidden hidden-right">When I first started it was un thinkable that Atom would end up as such a big thing, with thousands of game downloads and views.
+                    The future is uncertain as always, and I'm excited to see where my game development adventures might lead!
+                 </p>
                 
           </div>
         </div>
@@ -93,12 +72,12 @@
     </div>
   </div>
 </section>
-<br>
-<div class="container py-5">
-    <h2 class="mb-4 font-roboto fw-bold hidden hidden-left" id="games">Games</h2>
-     <p class="lead fs-4 text-secondary mb-3 hidden hidden-left">All games available on the Microsoft Store for select devices</p>
-    <div class="d-flex flex-row flex-nowrap overflow-auto p-3 hidden hidden-left" id="games-display"></div>
+<div class="container d-flex justify-content-center">
+    <a href="/" class="btn btn-primary px-3 m-2">Home</a>
+    <a href="#" class="btn btn-outline-secondary px-3 m-2">To Top</a>
 </div>
+</div>
+<br>
 
   <footer class="bg-body-tertiary text-center text-lg-start">
     <div class="p-3" style="background-color: rgba(0, 0, 0, 0.05);">

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atom Technologies</title>
+    <title>Atom Technologies Game</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/scroll.css">
 </head>
 <body class="bg-dark text-light">
+  <div class="contents">
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
     <a class="navbar-brand text-primary font-roboto" href="/"><img src="/assets/img/MainLogo.png" alt="Atom Technologies" width="30" height="30" class="d-inline-block align-text-top">Atom Technologies</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
         <a class="nav-item nav-link active p-3" href="/">Home</a>
-        <a class="nav-item nav-link p-3" href="/#about">About</a>
+        <a class="nav-item nav-link p-3" href="/pages/about.html">About</a>
         <a class="nav-item nav-link p-3" href="/#games">Games</a>
         <span class="nav-item nav-link"></span>
         </div>
@@ -39,21 +40,37 @@
         <img src="/assets/img/gamedisplay/10secondescape.png" class="d-block mx-lg-auto img-fluid rounded" alt="Atom Technologies Games" height="auto" loading="lazy" id="gameImage">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3 font-roboto" id="title">[Title]</h1>
-        <p class="text-secondary"><span class="text-secondary" id="releaseDate"></span><br><span class="text-secondary" id="developmentEngine"></span></p>
-        <div id="creatorFavorite"></div>
-        <div id="platforms"></div>
+        <h1 class="display-5 fw-bold lh-1 mb-3 font-roboto hidden hidden-left" id="title">[Title]</h1>
+        <p class="text-secondary hidden hidden-left"><span class="text-secondary" id="releaseDate"></span><br><span class="text-secondary" id="developmentEngine"></span></p>
+        <div id="creatorFavorite" class="hidden hidden-left"></div>
+        <div id="platforms" class="hidden hidden-left"></div>
         <br>
-        <p class="lead" id="description">[Description]</p>
+        <p class="lead hidden hidden-left" id="description">[Description]</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a type="button" class="btn btn-primary btn-lg px-4" href="#" id="trailerLink">Trailer</a>
-          <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="/#games">Back To Games</a>
+          <a type="button" class="btn btn-primary btn-lg px-4 hidden hidden-left" href="#" id="trailerLink">Trailer</a>
+          <a type="button" class="btn btn-outline-secondary btn-lg px-4 hidden hidden-left" href="/#games">Back To Games</a>
         </div>
       </div>
     </div>
   </div>
+  </div>
+
+    <footer class="bg-body-tertiary text-center text-lg-start">
+    <div class="p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="d-flex d-flex-padding justify-content-center">
+            <a href="/"><img src="/assets/img/MainLogo.png" alt="" width="30" height="30" class="mx-5 mt-2"></a>
+            <div class="justify-self-end d-flex d-flex-padding sm-3">
+                <a class="nav-item nav-link p-2" href="https://instagram.com/atom.technologies_"><img src="/bootstrap/icons/instagram.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://youtube.com/@atom.technologies"><img src="/bootstrap/icons/youtube.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://x.com/atom.technologie"><img src="/bootstrap/icons/twitter.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://pinterest.com/atomtechnologies_"><img src="/bootstrap/icons/pinterest.svg" alt="" class="svg-grey"></a>
+            </div>
+        </div>
+    </div>
+    </footer>
 
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/scroll.js"></script>
     <script src="/js/view-game.js"></script>
 </body>
 </html>

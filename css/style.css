@@ -46,3 +46,39 @@ img.svg-secondary{
 .font-roboto{
   font-family: 'Roboto', monospace !important;
 }
+
+.hidden {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.5s ease-out;
+}
+
+.hidden-left {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.5s ease-out;
+}
+.hidden-right {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s ease-out;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+hr.h-3{
+  height: 0.3em;
+  opacity: 1;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.contents{
+  min-height:calc(100vh - 4.5em);
+}

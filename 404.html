@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atom Technologies</title>
+    <title>404 Error</title>
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/scroll.css">
 </head>
 <body class="bg-dark text-light">
+  <div class="contents">
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
     <a class="navbar-brand text-primary font-roboto" href="/"><img src="/assets/img/MainLogo.png" alt="Atom Technologies" width="30" height="30" class="d-inline-block align-text-top">Atom Technologies</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,7 +19,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
         <a class="nav-item nav-link active p-2" href="/">Home</a>
-        <a class="nav-item nav-link p-2" href="/#about">About</a>
+        <a class="nav-item nav-link p-2" href="/pages/about.html">About</a>
         <a class="nav-item nav-link p-2" href="/#games">Games</a>
         <span class="nav-item nav-link"></span>
         </div>
@@ -35,19 +36,35 @@
     <hr class="bg-light">
     <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6 mx-auto rounded" style="background-image: url('/assets/img/404.jpg'); background-size: cover; background-position: center;">
+      <div class="col-10 col-sm-8 col-lg-6 mx-auto rounded" style="background-image: url('/assets/img/404.png'); background-size: cover; background-position: center;">
         <img src="/assets/img/ColoredLogoNoCircle.png" class="d-block mx-lg-auto img-fluid" alt="Atom Technologies Games" height="auto" loading="lazy">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3 font-roboto"><span class="text-primary">404</span> Page Not Found</h1>
-        <p class="lead">The page you are looking for does not exist or has been moved.</p>
+        <h1 class="display-5 fw-bold lh-1 mb-3 font-roboto hidden hidden-left"><span class="text-primary">404</span> Page Not Found</h1>
+        <p class="lead hidden hidden-left">The page you are looking for does not exist or has been moved.</p>
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <a type="button" class="btn btn-primary btn-lg px-4" href="/">Go Home</a>
+          <a type="button" class="btn btn-primary btn-lg px-4 hidden hidden-left" href="/">Go Home</a>
         </div>
       </div>
     </div>
   </div>
+  </div>
+
+      <footer class="bg-body-tertiary text-center text-lg-start">
+    <div class="p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        <div class="d-flex d-flex-padding justify-content-center">
+            <a href="/"><img src="/assets/img/MainLogo.png" alt="" width="30" height="30" class="mx-5 mt-2"></a>
+            <div class="justify-self-end d-flex d-flex-padding sm-3">
+                <a class="nav-item nav-link p-2" href="https://instagram.com/atom.technologies_"><img src="/bootstrap/icons/instagram.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://youtube.com/@atom.technologies"><img src="/bootstrap/icons/youtube.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://x.com/atom.technologie"><img src="/bootstrap/icons/twitter.svg" alt="" class="svg-grey"></a>
+                <a class="nav-item nav-link p-2" href="https://pinterest.com/atomtechnologies_"><img src="/bootstrap/icons/pinterest.svg" alt="" class="svg-grey"></a>
+            </div>
+        </div>
+    </div>
+    </footer>
 
     <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/scroll.js"></script>
 </body>
 </html>
