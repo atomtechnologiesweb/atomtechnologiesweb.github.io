@@ -91,5 +91,15 @@
         "trailerLink": "https://www.youtube.com/watch?v=iofYNkh_uEI",
         "platforms": ["Windows", "Xbox"],
         "developmentEngine": "Unity 6.0"
+    },
+    {
+        "image": "/assets/img/gamedisplay/furandtwig.png",
+        "title": "Fur & Twig",
+        "releaseDate": "29-06-2026",
+        "description": "Fur & Twig is a cozy narrative adventure about exploration, friendship, and forgotten mysteries. After a storm leaves Milo stranded on a mysterious island, she befriends Fred, a driftwood carver, and Twilight, an adventurous crow. Together they explore ancient ruins, hidden paths, and breathtaking landscapes while uncovering the island's long-lost history.",
+        "trailerLink": "https://youtu.be/DPu73sf2Al8",
+        "platforms": ["Windows", "Xbox"],
+        "developmentEngine": "Unity 6.3",
+        "creatorFavorite": true
     }
 ]
